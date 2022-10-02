@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+  --color-teal-green: #00C897;
+  --color-yellow-green: #C1DEAE;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://img.freepik.com/free-vector/asian-farmer-plowing-with-bull-agriculture-field-farm-with-chinese-vietnamese-indian-indonesian-worker-ox-working_575670-610.jpg?size=626&ext=jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* navbar */
+.navbar{
+    margin: 0;
+    background-color: #00C897;
+    box-shadow: 1px 1px black, 5px 3px goldenrod;
+  }
+
+
+  .heading{
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 50px;
+    color: #FFD365;
+    text-shadow: 2px 2px 5px red;
+  }
+  
+  .tagline{
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #FFD365;
+    text-shadow: 2px 2px 5px red;
+  }
+
+
+  /* Navbar ends */
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-teal-green);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+@media (min-width: 450px) {
+  form {
+    padding: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  /* display: block; */
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-yellow-green);
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1b1b32;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+  
+}
+
+.headerQuestion {
+    text-align: center;
+    font-weight: bolder;
+    color: #019267;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+.headerQuestion-2 {
+    text-align: center;
+    font-weight: bolder;
+    color: #019267;
+    font-size: 1.9rem;
+    margin-bottom: 0;
+}
+
+/* footer */
+
+footer{
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  background-color: #00C897;
+  border: 2.5px solid #019267;
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: auto;
+  padding: 7px;
+}
+
+
+/* For the popup */
+
+
+
+
+
+
+/*
+body {
+    box-sizing: border-box;
+}
+
+.modal_container {
+    position: fixed;
+    background-color:var(--color-teal-green) ;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+#close {
+    background-color:var(--color-yellow-green) ;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.75rem;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #1b1b32;
+    box-shadow: 0 rpx 4px rgba(0, 0, 0, 0.2);
+    font-size: 14px;;
+}
+
+.modal {
+    background-color: #FFD365; 
+
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 rpx 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+/* .modal p {
+    font-size: 14px;
+    opacity: 0.7;
+}  */
+

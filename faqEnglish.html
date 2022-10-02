@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frequently Asked Questions</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="common.js"></script>
+    </head>
+    <body>
+    
+        <!-- Navbar -->
+        <nav class="navbar">
+        <div class="heading">Krish-e-हल</div>
+        <div class="tagline">खेतिहर के लिए हल</div>
+      </nav>
+    
+    
+    
+        <div class="container">
+    
+            <div class="container-inner">
+    
+                <!-- Section Title -->
+    
+                <div class="section-title">
+    
+                    <h1 class="FAQ-heading">Frequently Asked Questions</h1>
+                
+                </div>
+    
+                <!-- Tab / Collapse Section -->
+    
+                <div class="tab-container">
+    
+                    <!-- Tab 1 -->
+    
+                    <div class="tab-accordian">
+    
+                        <div class="titleWrapper inactive">
+                            <h3>What is Krish-e-हल?</h3>
+    
+                            <div class="collapse-icon">
+                                <div class="acc-close"></div>
+                                <div class="acc-open"></div>
+                            </div>
+                        </div>
+    
+                        <div id="descwrapper" class="desWrapper">
+                            <p>Krish-e-हल is an e-commerce website that provides the farmers an aggregated platform to rent-out or rent-in tools and facilitates the transaction between fellow users.</p>
+                            
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Tab 2 -->
+    
+                    <div class="tab-accordian">
+    
+                        <div class="titleWrapper  inactive">
+                            <h3>Am I eligible to be a user of Krish-e?</h3>
+    
+                            <div class="collapse-icon">
+                                <div class="acc-close"></div>
+                                <div class="acc-open"></div>
+                            </div>
+                        </div>
+    
+                        <div id="descwrapper" class="desWrapper">
+                            <p>Any Indian farmer with authentic Aadhar Card is eligible to be a part of Krish-e family.</p>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Tab 3 -->
+    
+                    <div class="tab-accordian">
+    
+                        <div class="titleWrapper inactive">
+                            <h3>How do I become a member of Krish-e?</h3>
+    
+                            <div class="collapse-icon">
+                                <div class="acc-close"></div>
+                                <div class="acc-open"></div>
+                            </div>
+                        </div>
+    
+                        <div id="descwrapper" class="desWrapper">
+                            <p>Go to "link", and enter your Name, Aadhar number and Phone number. You will receive an OTP once verification is done. Enter the OTP and click on Proceed. Your account will be created and you will be redirected to the dashboard.</p>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Tab 4 -->
+    
+                    <div class="tab-accordian">
+    
+                        <div class="titleWrapper inactive">
+                            <h3>How to rent tools?</h3>
+    
+                            <div class="collapse-icon">
+                                <div class="acc-close"></div>
+                                <div class="acc-open"></div>
+                            </div>
+                        </div>
+    
+                        <div id="descwrapper" class="desWrapper">
+                            <p>Once on the dashboard, you will find 4 options there:</p>
+                            <ul>
+                                <li class=""><a native="true" href="#">Profile</a> - You will find your personal details, and your rent history in here.</li>
+                                <li class=""><a native="true" href="#">Rent-in</a> - Here, you can find the tools you need for farming with tools details, price and location.</li>
+                                <li class=""><a native="true" href="#">Rent-out</a> - Here, you can rent-out the tools that you don't need at the moment. All you have to do is click a picture of your tool, and fill in the necessary details.</li>
+                                <li class=""><a native="true" href="#">Advisory</a> - Farming is one of the toughest and most important occupation, and hence, Krish-e us here to make it a little easy for you. All you have to do is put in your question related to farming or the website. Our experts will soon get in touch with you and help you with the solution.</li>
+                            </ul>
+                            
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+    
+        </div>
+     
+        
+    <footer>
+        <a href="faqHindi.html">हिन्दी में देखें</a>
+    </footer>
+
+
+    <script>
+                jQuery(document).ready(function(){
+                    jQuery('.titleWrapper').click(function(){
+                        var toggle = jQuery(this).next('div#descwrapper');
+                        jQuery(toggle).slideToggle("slow");
+                    });
+                    jQuery('.inactive').click(function(){
+                        jQuery(this).toggleClass('inactive active');
+                    });
+                });
+
+
+    </script>
+
+
+    </body>
+    </html>

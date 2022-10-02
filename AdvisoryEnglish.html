@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesAdvisory.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- <script src="ADVISORY/index.js"></script> -->
+    <title>ADVISORY</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="heading">Krish-e-हल</div>
+        <div class="tagline">खेतिहर के लिए हल</div>
+      </nav>
+
+
+    <p class="headerQuestion">ADVISORY</p>
+    <p class="headerQuestion-2">We're here to help</p>
+
+    
+
+    <div class="container">
+        <header class="header">
+          
+
+        </header>
+        <form id="advisory-form">
+        
+      
+          <div class="form-group">
+            <p>ASK THE EXPERTS...</p>
+            <textarea
+              id="questions"
+              class="input-textarea"
+              name="question"
+              placeholder="Drop in your questions here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="button" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+
+        </form>
+
+    </div>
+      
+<!-- Footer -->
+
+<footer>
+  <a href="AdvisoryHindi.html">हिन्दी में देखें</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $("#submit").click(function() {
+        var question = $("#questions").val();
+
+        if(question == '') {
+            swal({
+                title: "Field is empty!",
+                text: "Please fill the missing field!",
+                icon: "warning",
+                button: "Ok",
+                });
+        } else {
+
+            swal({
+                title: "Your question has been posted!",
+                text: "Our Experts at Customer Care will contact you shortly within 5 to 7 days!",
+                icon: "success",
+                button: "Ok",
+                });
+        }
+    });
+</script>
+
+
+</body>
+</html>
